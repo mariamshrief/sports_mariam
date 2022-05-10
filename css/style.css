@@ -1,0 +1,236 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #566a3b;
+    transition: 0.5s;
+}
+header{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+header .logo:hover {
+color: red;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    list-style-type: none;
+    
+}
+header ul li a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+header ul li a:hover {
+    color: red;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+}
+.content .textBox{
+    position: relative;
+    max-width: 600px;
+}
+.content .textBox h2{
+    color: #fff;
+    font-size: 4em;
+    line-height: 1.7em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.content .textBox h2 span{
+    font-size: 2em;
+}
+.content .textBox p{
+    color: #fff;
+    padding-top: 20px;
+    font-size: 20px;
+}
+.content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #fff;
+    color: #111;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.content .imgBox{
+    width: 600px;
+    display: flex;
+    padding-right: 10px;
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+.content .imgBox img{
+    max-width: 500px;
+}
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumb li img{
+    max-width: 100px;
+}
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+
+.visual {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    height: 100vh;
+    
+
+}
+.visual img {
+    
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-block {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translateX(-50%);
+color: white;
+
+}
+
+
+.text-block h1{
+    margin: 0 0 10px;
+    font-size: 50px;
+    line-height: 1.12;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+.visual p.tagline {
+    line-height: 1.1;
+    font-size: 40;
+    margin: 0 0 8px;
+    text-align: center;
+    color: #ffce1b;
+
+}
+.visual .text-block .info {
+    text-align: center;
+    display: block;
+    font-size: 25;
+    line-height: 1.5;
+    color: #f9e084;
+    text-transform: uppercase;
+  
+
+}
+
+/* start footer */
+footer {
+    padding-top:100px ;
+    padding-bottom: 100px;
+    text-align: center;
+    color: white;
+    background-image: url(../img/video-placeholder.jpg);
+    background-size: cover;
+    position: relative;
+  }
+  footer::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgb(0 0 0 /50%);
+  }
+  
+  footer .container {
+    position: relative;
+  }
+  footer img {
+    margin-bottom: 20px;
+  }
+  footer a {
+    
+    font-size: 35px;
+    color:white;
+    margin-bottom: 15px;
+    text-decoration: none;
+  }
+  footer .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer .social-icons i {
+  color: white;
+  padding: 10px 15px;
+  font-size: 20px;
+  }
+  
+  footer .copyright {
+  margin-top: 60px;
+  }
+  footer .copyright span {
+  color: red;
+  font-weight: bolder;
+  font-size: 25px;
+  }
+  
+  /* end footer */
